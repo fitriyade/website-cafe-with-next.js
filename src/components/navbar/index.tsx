@@ -20,9 +20,9 @@ const Navbar = () => {
 
       {/* Desktop menu */}
       <div className="hidden md:flex items-center gap-4 text-white font-medium">
-        <a href="/home" className="desktop-menu">
+        <Link href="/" className="desktop-menu">
           Home
-        </a>
+        </Link>
         <a href="#menu" className="desktop-menu">
           Menu
         </a>
@@ -32,12 +32,12 @@ const Navbar = () => {
         <a href="#contact" className="desktop-menu">
           Contact
         </a>
-        <a
-          href="login.html"
+        <Link
+          href="/login"
           className="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-100 transition-colors"
         >
           Logout
-        </a>
+        </Link>
       </div>
 
       {/* Mobile menu */}

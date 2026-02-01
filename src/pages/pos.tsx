@@ -17,7 +17,7 @@ const POS = () => {
       const exist = prev.find((i) => i.id === item.id);
       if (exist) {
         return prev.map((i) =>
-          i.id === item.id ? { ...i, qty: i.qty + 1 } : i
+          i.id === item.id ? { ...i, qty: i.qty + 1 } : i,
         );
       }
       return [...prev, { ...item, qty: 1 }];
